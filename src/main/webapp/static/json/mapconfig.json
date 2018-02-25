@@ -1,0 +1,477 @@
+{
+  "innerNet": false,
+  "inner": {
+    "geometryService": ""
+  },
+  "outer": {
+    "geometryService": "http://60.191.110.204:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+    "initExtent": {
+      "xmax": 119.59819520715627,
+      "xmin": 118.0841418624297,
+      "ymax": 32.33532989619536,
+      "ymin": 31.7661007702188,
+      "spatialReference": {
+        "wkid": 4490
+      }
+    },
+    "wkid": 4490,
+    "layers": [
+      {
+        "alias": "全国政区图",
+        "category": "基础数据",
+        "group": "0032000100",
+        "uid": "01236952e2ef4028daac5368cd44001a",
+        "index": 1,
+        "id": "VEC_LAYER",
+        "type": "tdt",
+        "url": "VEC",
+        "visible": true
+      },
+      {
+        "alias": "影像图层",
+        "category": "基础数据",
+        "group": "0032000100",
+        "uid": "01236952e2ef4028daac5368cd44001b",
+        "index": 0,
+        "id": "IMG_LAYER",
+        "type": "tdt",
+        "url": "IMG",
+        "visible": false
+      },
+      {
+        "alias": "注记图层",
+        "category": "基础数据",
+        "group": "0032000100",
+        "uid": "01236952e2ef4028daac5368cd44001c",
+        "index": 3,
+        "id": "ANNO_LAYER",
+        "type": "tdt",
+        "url": "VECANNO",
+        "visible": true
+      },
+      {
+        "alias": "河道权属",
+        "category": "权属数据",
+        "group": "0032000101",
+        "uid": "01636952e2ef4028daac5368cd44001a",
+        "id": "GYYD_GYXYD",
+        "index": 4,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/HDQS/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "百里桩里程碑",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cd440lcb",
+        "id": "HJ_BLZLCB",
+        "index": 6,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/baimizhuanglichengbei/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "山区牌",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cd440sqp",
+        "id": "HJ_SQP",
+        "index": 6,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/shanqupai/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "通河牌",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cd440thp",
+        "id": "HJ_THP",
+        "index": 7,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/tonghepai/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "行政界牌",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cd4xzjp",
+        "id": "XZJP",
+        "index": 8,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/xingzhengjiepai/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "告示牌",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cd4gsp",
+        "id": "GSP",
+        "index": 9,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/gaoshipai/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "河道发证信息",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368hdfzxx",
+        "id": "HDFZXX",
+        "index": 4,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/hedaofazhengxinxi/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "已核查项目信息",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac536yhcxmxx",
+        "id": "YHCXMXX",
+        "index": 4,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/yihechajianshexiangmu/MapServer",
+        "visible": false
+      },
+      {
+        "alias": "基准线",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cd4jzx",
+        "id": "baseline",
+        "index": 5,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/baseline/MapServer",
+        "visible": true
+      },
+      {
+        "alias": "保护范围线",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368cbhfwx",
+        "id": "protectline",
+        "index": 5,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/protectline/MapServer",
+        "visible": true
+      },
+      {
+        "alias": "界址线",
+        "category": "划界数据",
+        "group": "0032000102",
+        "uid": "01636952e2ef4028daac5368435jzx",
+        "id": "boundaryline",
+        "index": 5,
+        "type": "dynamic",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/boundaryline/MapServer",
+        "visible": true
+      }
+    ],
+    "queryLayers":[
+      {
+        "alias": "权属数据",
+        "uid": "01636952e2ef4028daac5368cd44001a",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/HDQS/MapServer",
+        "returnFields": ["*"],
+        "findFields":[
+          { "fieldName":"TDZL"},
+          {"fieldName":"SYZMC_ZD"}
+        ],
+        "queryShowFields": [
+          {
+            "aliasName":"ID",
+            "fieldName":"BSM"
+          },
+          {
+            "aliasName":"field1",
+            "fieldName":"SYZMC_ZD"
+          },
+          {
+            "aliasName":"field2",
+            "fieldName":"TDZL"
+          }
+        ],
+        "showFields":[
+          {
+            "aliasName":"地籍号",
+            "fieldName":"DJH"
+          },
+          {
+            "aliasName":"土地坐落",
+            "fieldName":"TDZL"
+          },
+          {
+            "aliasName":"实测面积(㎡)",
+            "fieldName":"SCMJ"
+          },
+          {
+            "aliasName":"发证面积(㎡)",
+            "fieldName":"FZMJ"
+          },
+          {
+            "aliasName":"使用者名称",
+            "fieldName":"SYZMC_ZD"
+          }
+        ]
+      },
+      {
+        "alias": "河道发证信息",
+        "uid": "01636952e2ef4028daac5368hdfzxx",
+        "id": "HDFZXX",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/hedaofazhengxinxi/MapServer",
+        "returnFields": ["*"],
+        "findFields":[
+          { "fieldName":"区域段"},
+          {"fieldName":"备注"}
+        ],
+        "queryShowFields": [
+          {
+            "aliasName":"ID",
+            "fieldName":"土地证"
+          },
+          {
+            "aliasName":"field1",
+            "fieldName":"区域段"
+          },
+          {
+            "aliasName":"field2",
+            "fieldName":"土地证"
+          }
+        ],
+        "showFields":[
+          {
+            "aliasName":"区域段",
+            "fieldName":"区域段"
+          },
+          {
+            "aliasName":"土地证号",
+            "fieldName":"土地证号"
+          },
+          {
+            "aliasName":"时间",
+            "fieldName":"时间"
+          },
+          {
+            "aliasName":"面积(㎡)",
+            "fieldName":"面积"
+          },
+          {
+            "aliasName":"周长(m)",
+            "fieldName":"长度"
+          },
+          {
+            "aliasName":"备注",
+            "fieldName":"备注"
+          }
+        ]
+      },
+      {
+        "alias": "已核查项目信息",
+        "uid": "01636952e2ef4028daac536yhcxmxx",
+        "id": "YHCXMXX",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/yihechajianshexiangmu/MapServer",
+        "returnFields":  ["*"],
+        "findFields":[
+          { "fieldName":"DWMC"},
+          { "fieldName":"ZYZH"},
+          { "fieldName":"ZYMD"},
+          { "fieldName":"FRDB"},
+          { "fieldName":"LXDZ"},
+          {"fieldName":"ZYLX"}
+        ],
+        "queryShowFields": [
+          {
+            "aliasName":"ID",
+            "fieldName":"DWMC"
+          },
+          {
+            "aliasName":"field1",
+            "fieldName":"DWMC"
+          },
+          {
+            "aliasName":"field2",
+            "fieldName":"XZPD"
+          }
+        ],
+        "showFields":[
+          {
+            "aliasName":"单位名称",
+            "fieldName":"DWMC"
+          },
+          {
+            "aliasName":"联系电话",
+            "fieldName":"LXDH"
+          },
+          {
+            "aliasName":"占用类型",
+            "fieldName":"ZYLX"
+          },
+          {
+            "aliasName":"审批机关",
+            "fieldName":"SPJG"
+          },
+          {
+            "aliasName":"占用证号",
+            "fieldName":"ZYZH"
+          },
+          {
+            "aliasName":"发证机关",
+            "fieldName":"FZJG"
+          },
+          {
+            "aliasName":"占用目的",
+            "fieldName":"ZYMD"
+          },
+          {
+            "aliasName":"占用位置",
+            "fieldName":"ZYWZ"
+          },
+          {
+            "aliasName":"占用面积(㎡)",
+            "fieldName":"ZYMJ"
+          },
+          {
+            "aliasName":"规费缴纳情况",
+            "fieldName":"GFJNQK"
+          },
+          {
+            "aliasName":"性质判定",
+            "fieldName":"XZPD"
+          },
+          {
+            "aliasName":"行政区属",
+            "fieldName":"XZQM"
+          },
+          {
+            "aliasName":"核查情况",
+            "fieldName":"HCQK"
+          },
+          {
+            "aliasName":"网填情况",
+            "fieldName":"WTQK"
+          },
+          {
+            "aliasName":"法人代表",
+            "fieldName":"FRDB"
+          },
+          {
+            "aliasName":"联系地址",
+            "fieldName":"LXDZ"
+          },
+          {
+            "aliasName":"备注",
+            "fieldName":"BZ"
+          }
+        ]
+      },
+      {
+        "alias": "百里桩里程碑",
+        "uid": "01636952e2ef4028daac5368cd440lcb",
+        "id": "HJ_BLZLCB",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/baimizhuanglichengbei/MapServer",
+        "returnFields": "*"
+      },
+      {
+        "alias": "山区牌",
+        "uid": "01636952e2ef4028daac5368cd440sqp",
+        "id": "HJ_SQP",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/shanqupai/MapServer",
+        "returnFields": "*"
+      },
+      {
+        "alias": "告示牌",
+        "uid": "01636952e2ef4028daac5368cd4gsp",
+        "id": "GSP",
+        "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/gaoshipai/MapServer",
+        "returnFields": "*",
+        "showFields":[
+          {
+            "aliasName":"点名",
+            "fieldName":"点名"
+          },
+          {
+            "aliasName":"告示牌",
+            "fieldName":"告示牌"
+          },
+          {
+            "aliasName":"备注",
+            "fieldName":"备_注"
+          }
+        ]
+      }
+    ],
+    "identifyLayer": {
+      "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/HDQS/MapServer",
+      "returnFields": "*"
+    },
+    "locationLayer": {
+      "xzq": {
+        "url": "http://60.191.110.203:6080/arcgis/rest/services/NJ_GYYD/GYYD_FW/MapServer/0",
+        "field": "XZQDM"
+      },
+      "jd": {
+        "url": "http://60.191.110.203:6080/arcgis/rest/services/NJ_GYYD/GYYD_FW/MapServer/1",
+        "field": "XZQDM"
+      },
+      "yq": {
+        "url": "http://60.191.110.203:6080/arcgis/rest/services/NJ_GYYD/GYYD_FW/MapServer/2",
+        "field": "KFQHZFW_wgs.MLDM"
+      }
+    },
+    "page": {
+      "rivermap": {
+        "layerIds": [
+          "01236952e2ef4028daac5368cd44001b",
+          "01236952e2ef4028daac5368cd44001a",
+          "01236952e2ef4028daac5368cd44001c",
+          "01636952e2ef4028daac5368cd44001a",
+          "01636952e2ef4028daac5368cd440lcb",
+          "01636952e2ef4028daac5368cd440sqp",
+          "01636952e2ef4028daac5368cd440thp",
+          "01636952e2ef4028daac5368cd4xzjp",
+          "01636952e2ef4028daac5368cd4gsp",
+          "01636952e2ef4028daac5368hdfzxx",
+          "01636952e2ef4028daac536yhcxmxx",
+          "01636952e2ef4028daac5368cd4jzx",
+          "01636952e2ef4028daac5368cbhfwx",
+          "01636952e2ef4028daac5368435jzx"
+        ],
+        "widgets": [
+          {
+            "id": "menu_identify",
+            "wid": "identify",
+            "title": "属性识别",
+            "icon": "icon-information"
+          },
+          {
+            "id": "menu_analysis",
+            "wid": "analysis",
+            "title": "权属分析",
+            "icon": "icon-pen"
+          }
+        ],
+        "location": {
+          "url": "http://60.191.110.203:6080/arcgis/rest/services/NJ_GYYD/GYYD_NJ_GYYD/MapServer",
+          "field": "dksyh"
+        }
+      },
+      "taskcenter": {
+        "layerIds": [
+          "01236952e2ef4028daac5368cd44001a",
+          "01236952e2ef4028daac5368cd44001c"
+        ],
+        "location": {
+          "url": "http://60.191.110.204:6080/arcgis/rest/services/hdgl/HDQS/MapServer",
+          "field": "dksyh"
+        },
+        "dxLayer": {
+          "url": "http://60.191.110.203:6080/arcgis/rest/services/NJ_GYYD/GYYD_DXYD/MapServer/0"
+        }
+      }
+    }
+  }
+}

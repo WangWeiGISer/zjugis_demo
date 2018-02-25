@@ -1,0 +1,32 @@
+﻿body{
+    background-image:url("../../images/bg_loginpic.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    /* placeholder颜色  */
+    color: #aab2bd;
+    /* placeholder字体大小  */
+    font-size: 12px;
+    /* placeholder位置  */
+    text-align: center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #aab2bd;
+    font-size: 12px;
+    /* placeholder位置  */
+    text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #aab2bd;
+    font-size: 12px;
+    /* placeholder位置  */
+    text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #aab2bd;
+    font-size: 12px;
+    /* placeholder位置  */
+    text-align: center;
+}

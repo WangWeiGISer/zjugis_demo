@@ -1,0 +1,574 @@
+/* 遮罩层样式 */
+#map_mask{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 35;
+}
+
+.scalebar_bottom-right {
+    right: 145px !important;
+    bottom: 12px !important;
+}
+
+#map_logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:url(../../../images/theme/default/mapresource/maplogo.png)
+}
+/* 禁用map层样式 */
+#map_alpha{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 35;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+}
+/* 遮罩层样式 */
+#map_maskbackgrpund{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-color: #0a6aa1;
+}
+/* 遮罩层动画 */
+#map_loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #0a6aa1;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+
+/* 基础class样式 */
+.base_widget{
+    background: rgba(69, 90, 109, 0.9);
+    transition: all .2s linear;
+}
+
+.base_widget:hover{
+    background: rgba(47, 128, 201, 1);
+}
+
+/* 地图左侧行政区container */
+    #region_container{
+      z-index: 30;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    /* 地图左侧行政区btn*/
+    #region_btn{
+        border-radius: 5px;
+        z-index: 30;
+        width: 89px;
+        height: 35px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border: 1px solid #57585A;
+        line-height: 35px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    /* 地图左侧行政区btn*/
+    #region_tree{
+      z-index: 30;
+      width: 150px;
+      height: auto;
+      position: absolute;
+      top: 40px;
+      left: 0px;
+      border-radius: 10px;border: 1px solid #dcd6d6;display: none;width: 250px;height: 350px;padding: 8px;overflow: auto;background: rgba(245, 245, 245, 1);
+    }
+
+    .xzqCitem{
+        font-size: 13px;
+        float: left;
+        margin-left: 5px;
+    }
+    .xzqZitem{
+        width: 100%;
+        font-size: 17px;
+        color: #114f86;
+        margin-left: 3px;
+    }
+
+
+    /* 地图右侧按钮container */
+    #mymap_widgets{
+      z-index: 30;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    /* 地图右侧面板panel */
+    #layer_widget_panel{
+        padding: 8px;
+        border-radius: 5px;
+        background: rgba(245, 245, 245, 0.8);
+      overflow: auto;
+      z-index: 30;
+      width: 225px;
+      height: 400px;
+      position: absolute;
+      top: 0px;
+      right: 70px;
+      border: 1px solid #dcd6d6;
+      display: none;
+    }
+
+    /* 地图右侧按钮class样式 */
+    .map_widget{
+      z-index: 30;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      text-align: center;
+      border-radius: 3px;
+      display: block;
+      border: 1px solid #a2b2d4;
+      margin-right: 0px;
+      margin-bottom: 5px;
+    }
+
+/* 地图右侧按钮iconfont样式 */
+.iconfont_map_widgit{
+    font-size:28px;
+    color : white;
+}
+
+/* 添加巡查点地图按钮iconfont样式 */
+.iconfont_map_btn{
+    margin-left: 5px;
+    font-size:18px;
+    color : white;
+}
+
+/* 地图右侧layertree iconfont样式 */
+.iconfont_map_layertree{
+    font-size:15px;
+    color : #0a6aa1;
+}
+
+/* jstree样式重写*/
+.jstree-clicked {
+    background: rgba(204, 209, 212, 0.15) !important;
+}
+
+/* plan-list-map_content*/
+
+#point_list_container {
+    font-family: Helvetica,Arial,cursive;
+    border: 1px solid #a2b2d4;
+    position: absolute;overflow: auto;
+    top: 80px;
+    bottom: 60px;
+    width: 290px;
+}
+
+#point_list_container .getpoint_list_title{
+    width: 80px;
+    font-style: normal;
+}
+
+#point_list_container li{
+    font-style: normal;
+    font-family: 'Merriweather', serif;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#point_list_container h4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.getpoint_list{
+    background: rgba(216, 226, 234, 0.5);
+    margin: 10px 4px;
+    padding: 4px;
+}
+
+.btn-default{
+    font-size: 18px;
+    background-color: #84b4b7;
+}
+
+.form_get_plan_point th{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*以下ui样式 手风琴*/
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #57636d;
+    text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+h1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 a {
+    color: #c12c42;
+    font-size: 16px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 360px;
+    margin: 15px auto 15px;
+    background: rgba(161, 180, 195, 0.9);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordion .link {
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #b0beca;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 0px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 18px;
+    color:  #57636d;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.icon_map-arrowdown {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li i.icon_map-walk {
+    right: 36px;
+    left: auto;
+    font-size: 20px;
+}
+
+.accordion li.open .link {
+    color: #57636d;
+}
+
+.accordion li.open i {
+    color: #b63b4d;;
+}
+.accordion li.open i.icon_map-arrowdown {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    display: none;
+    background: rgba(225, 229, 238, 0.9);
+    font-size: 14px;
+}
+
+.submenu li {
+    border-bottom: 1px solid #fbf9f9;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #19222a;
+    padding: 12px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+    background: #e1e5ee;
+    color: #FFF;
+}
+
+.itembtn{
+    position: absolute;
+    font-size: 25px;
+    color: #4e6275;
+    width: 28px;
+}
+.itembtn:hover {
+    background-color: #adb6c5;
+}
+
+.btnbox{
+    height: 40px;
+    line-height: 40px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+/*以下为tabcss*/
+
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.tab .nav-tabs{
+    border-bottom: 1px solid #4e6275;
+}
+.tab .nav-tabs li{
+    margin: 0;
+}
+.tab .nav-tabs li a{
+    font-size: 14px;
+    color: #999898;
+    background: #fff;
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid #ddd;
+    text-transform: uppercase;
+    position: relative;
+}
+.tab .nav-tabs li a:hover{
+    border-top: none;
+    border-bottom: none;
+    border-right-color: #ddd;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:hover{
+    color: #fff;
+    border: none;
+    background: #4e6275;
+    border-right: 1px solid #ddd;
+}
+.tab .nav-tabs li.active a:before{
+    content: "";
+    width: 58%;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.tab .nav-tabs li.active a:after{
+    content: "";
+    border-top: 10px solid #4e6275;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+}
+.tab .tab-content{
+    overflow: auto;
+    font-size: 13px;
+    color: #999898;
+    line-height: 25px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #4e6275;
+    border-top: none;
+}
+.tab .tab-content h3{
+    font-size: 24px;
+    color: #999898;
+    margin-top: 0;
+}
+@media only screen and (max-width: 480px){
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+    }
+    .tab .nav-tabs li.active a,
+    .tab .nav-tabs li.active a:after,
+    .tab .nav-tabs li.active a:hover{
+        border: none;
+    }
+}
+
+/*tab日志面板*/
+ul.filelist{
+    margin: 0 auto;
+    width: 310px;
+    overflow: hidden;}
+ul.filelist li{
+    float: left;
+    padding: 5px 1px;
+    width: 152px;}
+ul.filelist li img{
+    display: block;
+    width: 150px;
+    height: 90px;}
+ul.filelist li span{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F6F6F6;
+    text-align: center;}
+
+#detail_tab{
+    z-index: 36;
+    position: absolute;
+    top: 60px;
+    bottom: 100px;
+    right: 70px;
+}
+
+.maptab_table{
+    width: 100%;
+}
+
+.maptab_table_title{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.a-single-line{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#parampanel{
+    overflow: auto;
+    font-size: 13px;
+    color: #999898;
+    line-height: 25px;
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #e0e9ea;
+    z-index: 36;
+    width: 300px;
+    height: inherit;
+    position: absolute;
+    top: 25px;
+}
+
+#noitemtip{
+    font-size: large;
+    line-height: 40px;
+    margin: 20px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background-color: #bababa;
+    border-color: #bababa;
+    color: #FFFFFF;
+}
+
+.btn-default {
+    color: white !important;
+    font-size: 18px;
+    background-color: #4e6275 !important;
+}
+
+.range-picker .process {
+    background-color: #4e6275 !important;
+}
+
+.range-picker .select-label {
+    background-color: #4e6275 !important;
+}
+
+.jstree-default .jstree-clicked {
+     box-shadow: inset 0 0 0px #999 !important;
+}
+
+.range-picker .select-label:after {
+    border-top-color:#4e6275 !important;
+}
+
+/* infowindow样式 */
+.contentPane{
+    color: #556879 !important;
+}
+.esriPopup .titlePane {
+    line-height: 26px !important;
+    font-size: 17px !important;
+    background-color: #556879 !important;
+    border-radius: 5px 5px 0px 0px !important;
+    -webkit-border-radius: 5px 5px 0px 0px !important;
+}

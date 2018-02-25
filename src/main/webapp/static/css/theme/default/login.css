@@ -1,0 +1,204 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, dl, dt, dd {
+    list-style: none;
+}
+
+body, html {
+    background: #f9f9f9;
+    overflow: hidden;
+}
+
+
+.login-content {
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    margin: -310px 0 0 0;
+}
+
+.login-logo-wrap {
+    width: 1080px;
+    margin: 0 auto;
+    height: 44px;
+}
+
+.login-logo {
+    float: left;
+    width: 299px;
+    height: 44px;
+}
+
+.lang-bg {
+    height: 488px;
+    width: 100%;
+    background: url(../../../images/theme/default/login-bg.png) center center no-repeat;
+    clear: both;
+    margin-top: 7px;
+}
+
+.login-box {
+    width: 1080px;
+    height: 488px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left-img {
+    position: absolute;
+    left: -80px;
+    width: 800px;
+    height: 340px;
+    background: url(../../../images/theme/default/login-obj.png);
+    z-index: 10;
+    top: 50px;
+}
+
+
+
+.right-wrap {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 385px;
+    height: 350px;
+    background: #fbfcfc;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    z-index: 99;
+    overflow: hidden;
+}
+
+.wrap-title {
+    background: #212f42;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    font-size: 17px;
+    color: #cfd0d3;
+    font-family: 'Microsoft YaHei';
+}
+
+.right-wrap ul {
+    margin: 40px 0 0 45px;
+}
+
+.right-wrap ul li {
+    margin-top: 21px;
+    clear: both;
+}
+
+.user-icon {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../../images/theme/default/icon-user.png);
+    float: left;
+    border: solid 1px #bacada;
+    border-radius: 2px 0 0 2px;
+}
+
+.password-icon {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../../images/theme/default/icon-password.png);
+    float: left;
+    border: solid 1px #bacada;
+}
+
+.login-text {
+    background: #f3f8fc;
+    border: solid 1px #bacada;
+    transition: all .2s linear;
+    height: 38px;
+    width: 247px;
+    padding-left: 10px;
+    font-family: 'Microsoft YaHei';
+    font-size: 15px;
+    color: #788ead;
+    border-left: none;
+    transition: all .1s linear;
+}
+
+.login-text:hover {
+    background: #fff;
+}
+
+.checkbox-style {
+    color: #4e5f77;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox-style:hover {
+    color: #233145;
+}
+
+.checkbox-style i {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../../../images/theme/default/checkbox-bg.png) 0 0 no-repeat;
+    vertical-align: middle;
+    margin: -3px 6px 0 43px;
+    cursor: pointer;
+}
+
+.checkbox-style:hover i {
+    background: url(../../../images/theme/default/checkbox-bg.png) -16px 0 no-repeat;
+}
+
+.checked i {
+    background: url(../../../images/theme/default/checkbox-bg.png) -32px 0 no-repeat;
+}
+
+.checked:hover i {
+    background: url(../../../images/theme/default/checkbox-bg.png) -32px 0 no-repeat;
+}
+
+.login-button {
+    width: 300px;
+    margin-top: 28px;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    font-size: 18px;
+    transition: all .2s linear;
+    background: #408dd5;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background: #1775bb;
+}
+
+.login-foot {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: #7c7c7c;
+    font-size: 13px;
+    font-family: 'Microsoft YaHei';
+    height: 30px;
+    line-height: 30px;
+}
+
+.fg-wrap {
+    margin-top: 25px;
+    height: 58px;
+    line-height: 48px;
+    background: #ebf4fb;
+}
